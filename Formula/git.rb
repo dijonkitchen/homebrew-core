@@ -125,6 +125,7 @@ class Git < Formula
     bash_completion.install "contrib/completion/git-completion.bash"
     bash_completion.install "contrib/completion/git-prompt.sh"
     zsh_completion.install "contrib/completion/git-completion.zsh" => "_git"
+    zsh_completion.install "contrib/completion/git-prompt.sh"
     cp "#{bash_completion}/git-completion.bash", zsh_completion
 
     elisp.install Dir["contrib/emacs/*.el"]
